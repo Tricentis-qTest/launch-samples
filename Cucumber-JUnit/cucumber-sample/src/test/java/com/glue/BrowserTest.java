@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import java.time.Duration;
+
 
 public class BrowserTest {
     private WebDriver driver;
@@ -30,7 +32,7 @@ public class BrowserTest {
     @Then("^I should see qTest Launch item on the Search Result page$")
     public void checkSearchResult() {
         final WebElement qTestLaunchBoxElement = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[2]/div/article[5]/a]"));
-        new WebDriverWait(driver,10L).until(new ExpectedCondition<Boolean>() {
+        new WebDriverWait(driver,Duration.ofSeconds(10)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 return qTestLaunchBoxElement.isDisplayed();
             }

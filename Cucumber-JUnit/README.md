@@ -1,7 +1,5 @@
 # Cucumber JUnit Sample Application
 
-> WARNING: The Cucumber JUnit sample application is currently not working - cannot be compiled.
-
 Based on [cucumber-sample](https://github.com/QASymphony/cucumber-sample) repository and 
 [documentation](https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/universal_agent/parsers/integrate_cucumber_with_universal_agent.htm).
 
