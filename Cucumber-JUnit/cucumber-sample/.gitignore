@@ -1,0 +1,6 @@
+/.idea
+/.target
+/.gradle
+/target/
+.DS_Store
+**/*.DS_Store
