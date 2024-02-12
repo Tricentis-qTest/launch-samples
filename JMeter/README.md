@@ -25,7 +25,7 @@ On your Host:
     - _/usr/local/var/jmeter-sample_ (Linux or Mac)
 7. **Execute Command**: 
     ```shell
-    /usr/local/opt/apache-jmeter-5.6.3/bin/jmeter -n -f -t Users.jmx -l results/result.xml -Jjmeter.save.saveservice.output_format=xml -Jjmeter.save.saveservice.response_data.on_error=true
+    /usr/local/opt/apache-jmeter-5.6.3/bin/jmeter -n -t Users.jmx -l results/result.xml -Jjmeter.save.saveservice.output_format=xml -Jjmeter.save.saveservice.response_data.on_error=true
     ```
    > Adjust the path to JMeter executable to reflect the actual path in your host machine. For example on Windows to `C:\apache-jmeter-5.6.3\bin\jmeter`.
     
