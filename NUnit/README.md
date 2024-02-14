@@ -7,9 +7,9 @@ and [documentation](https://documentation.tricentis.com/qtest/od/en/content/laun
 
 ### Prerequisites
 On your Host:
-1. Copy the _NUnitTestSample_ folder to your desired location, e.g.:
-    - _/usr/local/var/NUnitTestSample_ (Linux or Mac)
-    - _C:\NUnitTestSample_ (Windows)
+1. Copy the _nunit-sample_ folder to your desired location, e.g.:
+    - _/usr/local/var/nunit-sample_ (Linux or Mac)
+    - _C:\nunit-sample_ (Windows)
 2. Install [.NET 2.2](https://dotnet.microsoft.com/en-us/download/dotnet)
 
 ### Agent Setup
@@ -19,8 +19,8 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _node_
 6. **Working Directory**:
-    - _C:\NUnitTestSample_ (Windows)
-    - _/usr/local/var/NUnitTestSample_ (Linux or Mac)
+    - _C:\nunit-sample_ (Windows)
+    - _/usr/local/var/nunit-sample_ (Linux or Mac)
 7. **Execute Command**:
    ```node
    // sample Execute Command for executing .NET core test with node executor
@@ -45,12 +45,13 @@ On your Host:
    
    // path to test project, change it to reflect yours
    let TEST_PROJECT_NAME = 'NUnitTestSample';
-   let TEST_PROJECT_PATH = path.resolve(SOLUTION_DIR, `${TEST_PROJECT_NAME}.csproj`);
+   let TEST_PROJECT_DIR = path.resolve(SOLUTION_DIR, 'DotnetCore', TEST_PROJECT_NAME);
+   let TEST_PROJECT_PATH = path.resolve(TEST_PROJECT_DIR, `${TEST_PROJECT_NAME}.csproj`);
    
    // possible value for configuration: Debug or Release
    let CONFIGURATION = 'Debug';
    // we are going to execute published test
-   let PUBLISH_DIR = path.resolve(SOLUTION_DIR, 'bin', CONFIGURATION, `netcoreapp${TARGET_DOTNETCORE_VERSION}`, 'publish');
+   let PUBLISH_DIR = path.resolve(TEST_PROJECT_DIR, 'bin', CONFIGURATION, `netcoreapp${TARGET_DOTNETCORE_VERSION}`, 'publish');
    // path to the test project output
    let TEST_PROJECT_PUBLISHED_PATH = path.resolve(PUBLISH_DIR, `${TEST_PROJECT_NAME}.dll`);
    
@@ -114,6 +115,6 @@ On your Host:
    }
    ```
 8. **Path to Results**:
-    - _C:\NUnitTestSample\TestResults_ (Windows)
-    - _/usr/local/var/NUnitTestSample/TestResults_ (Linux or Mac)
+    - _C:\nunit-sample\TestResults_ (Windows)
+    - _/usr/local/var/nunit-sample/TestResults_ (Linux or Mac)
 9. **Result Parser**: _NUnit_
