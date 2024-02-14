@@ -45,13 +45,12 @@ On your Host:
    
    // path to test project, change it to reflect yours
    let TEST_PROJECT_NAME = 'NUnitTestSample';
-   let TEST_PROJECT_DIR = path.resolve(SOLUTION_DIR, 'DotnetCore', TEST_PROJECT_NAME);
-   let TEST_PROJECT_PATH = path.resolve(TEST_PROJECT_DIR, `${TEST_PROJECT_NAME}.csproj`);
+   let TEST_PROJECT_PATH = path.resolve(SOLUTION_DIR, `${TEST_PROJECT_NAME}.csproj`);
    
    // possible value for configuration: Debug or Release
    let CONFIGURATION = 'Debug';
    // we are going to execute published test
-   let PUBLISH_DIR = path.resolve(TEST_PROJECT_DIR, 'bin', CONFIGURATION, `netcoreapp${TARGET_DOTNETCORE_VERSION}`, 'publish');
+   let PUBLISH_DIR = path.resolve(SOLUTION_DIR, 'bin', CONFIGURATION, `netcoreapp${TARGET_DOTNETCORE_VERSION}`, 'publish');
    // path to the test project output
    let TEST_PROJECT_PUBLISHED_PATH = path.resolve(PUBLISH_DIR, `${TEST_PROJECT_NAME}.dll`);
    
@@ -83,13 +82,6 @@ On your Host:
    // execute `dotnet publish` command to publish the test project,
    // the published results will be stored in PUBLISH_DIR
    commandBuilder.push(`"${DOTNET_EXECUTABLE_PATH}" publish "${TEST_PROJECT_PATH}"`);
-   
-   // copy the chromedriver to the PUBLISH_DIR dir for the Selenium test to run properly
-   // remove these commands if you're not running Selenium tests and so there will be no chromedriver in the output
-   let CHROME_DRIVER_NAME = isWin ? 'chromedriver.exe' : 'chromedriver';
-   let COPY_COMMAND = isWin ? 'copy' : 'cp';
-   let PATH_TO_CHROME_DRIVER = path.resolve(TEST_PROJECT_DIR, 'bin', CONFIGURATION, `netcoreapp${TARGET_DOTNETCORE_VERSION}`, CHROME_DRIVER_NAME);
-   commandBuilder.push(`${COPY_COMMAND} "${PATH_TO_CHROME_DRIVER}" "${PUBLISH_DIR}"`);
    
    /**
      * Kicks off the test. What it does is to resolve the value of TESTCASES_AC variable and validate:
