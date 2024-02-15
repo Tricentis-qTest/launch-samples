@@ -7,10 +7,7 @@ Based on [archive-postman-sample](https://github.com/Tricentis-qTest/archive-pos
 
 ### Prerequisites
 On your Host:
-1. Copy the _archive-postman-samples_ folder to your desired location, e.g.:
-    - _/usr/local/var/archive-postman-samples_ (Linux or Mac)
-    - _C:\archive-postman-samples_ (Windows)
-2. Install [Newman](https://learning.postman.com/docs/collections/using-newman-cli/installing-running-newman/),
+1. Install [Newman](https://learning.postman.com/docs/collections/using-newman-cli/installing-running-newman/),
    a command-line Collection Runner for Postman.
 
 
@@ -21,13 +18,13 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _batch_ (Windows) or _shell_ (Linux or Mac)
 6. **Working Directory**:
-    - _C:\archive-postman-samples_ (Windows)
-    - _/usr/local/var/archive-postman-samples_ (Linux or Mac)
+    - _C:\launch-sample-applications\Postman-JUnit_ (Windows)
+    - _/usr/local/var/launch-sample-applications/Postman-JUnit_ (Linux or Mac)
 7. **Execute Command**: Both for Windows and Linux/Mac
-    ```bash
+    ```shell
     newman run "./sample-collection.json" --reporters cli,junit --reporter-junit-export "./results/sample-results.xml" --suppress-exit-code    
     ```
 8. **Path to Results**:
-    - _C:\archive-postman-samples\results\sample-results.xml_ (Windows)
-    - _/usr/local/var/archive-postman-samples/results/sample-results.xml_ (Linux or Mac)
+    - _C:\launch-sample-applications\Postman-JUnit\results\sample-results.xml_ (Windows)
+    - _/usr/local/var/launch-sample-applications/Postman-JUnit/results/sample-results.xml_ (Linux or Mac)
 9. **Result Parser**: _Postman JUnit_

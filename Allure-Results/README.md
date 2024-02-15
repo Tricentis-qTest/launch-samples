@@ -19,13 +19,13 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _batch_ (Windows) or _shell_ (Linux or Mac)
 6. **Working Directory**:
-    - _C:\launch-sample-applications\Allure-Results\allure-junit-sample_ (Windows)
-    - _/usr/local/var/launch-sample-applications/Allure-Results/allure-junit-sample_ (Linux or Mac)
+    - _C:\launch-sample-applications\Allure-Results_ (Windows)
+    - _/usr/local/var/launch-sample-applications/Allure-Results_ (Linux or Mac)
 7. **Execute Command**:
    ```shell
    mvn clean test
    ```
 8. **Path to Results**:
-    - _C:\launch-sample-applications\Allure-Results\allure-junit-sample\target\allure-results_ (Windows)
-    - _/usr/local/var/launch-sample-applications/Allure-Results/allure-junit-sample/target/allure-results_ (Linux or Mac)
+    - _C:\launch-sample-applications\Allure-Results\target\allure-results_ (Windows)
+    - _/usr/local/var/launch-sample-applications/Allure-Results/target/allure-results_ (Linux or Mac)
 9. **Result Parser**: _Allure Results_

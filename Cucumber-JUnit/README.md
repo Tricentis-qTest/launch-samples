@@ -7,11 +7,8 @@ Based on [cucumber-sample](https://github.com/QASymphony/cucumber-sample) reposi
 
 ### Prerequisites
 On your Host:
-1. Copy the _cucumber-sample_ folder to your desired location, e.g.:
-    - _/usr/local/var/cucumber-sample_ (Linux or Mac)
-    - _C:\junit-sample_ (Windows)
-2. Install [Java 8+](https://jdk.java.net/archive/), e.g. use v13.0.2.
-3. Install [Maven](https://maven.apache.org/install.html), e.g. use v3.9.6. Make sure to remember the installation path,
+1. Install [Java 8+](https://jdk.java.net/archive/), e.g. use v13.0.2.
+2. Install [Maven](https://maven.apache.org/install.html), e.g. use v3.9.6. Make sure to remember the installation path,
    you will need it in the Agent setup.
 
 ### Agent Setup
@@ -21,8 +18,8 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _node_
 6. **Working Directory**:
-    - _C:\cucumber-sample_ (Windows)
-    - _/usr/local/var/cucumber-sample_ (Linux or Mac)
+    - _C:\launch-sample-applications\Cucumber-JUnit_ (Windows)
+    - _/usr/local/var/launch-sample-applications/Cucumber-JUnit_ (Linux or Mac)
 7. **Execute Command**: Both for Windows and Linux/Mac
     ```node
     const { execSync } = require("child_process");
@@ -48,6 +45,6 @@ On your Host:
     console.log(`=== command completed ===`)
     ```
 8. **Path to Results**:
-    - _C:\cucumber-sample\target\surefire-reports_ (Windows)
-    - _/usr/local/var/cucumber-sample\target\surefire-reports_ (Linux or Mac)
+    - _C:\launch-sample-applications\Cucumber-JUnit\target\surefire-reports_ (Windows)
+    - _/usr/local/var/launch-sample-applications\Cucumber-JUnit/target/surefire-reports_ (Linux or Mac)
 9. **Result Parser**: _Cucumber JUnit_
