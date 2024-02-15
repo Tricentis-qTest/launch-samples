@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1708009120536" stop="1708009130660" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>sample.junit.HelloWord</name>
+    <test-cases>
+        <test-case start="1708009120536" stop="1708009120536" status="passed">
+            <name>sayHello</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="TRI-RKD9KYL6GQ"/>
+                <label name="thread" value="84561@TRI-RKD9KYL6GQ.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1708009120536" stop="1708009130542" status="passed">
+            <name>testTimeOut</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="TRI-RKD9KYL6GQ"/>
+                <label name="thread" value="84561@TRI-RKD9KYL6GQ.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1708009130549" stop="1708009130555" status="passed">
+            <name>test</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="TRI-RKD9KYL6GQ"/>
+                <label name="thread" value="84561@TRI-RKD9KYL6GQ.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1708009130558" stop="1708009130559" status="pending">
+            <name>infinity</name>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="TRI-RKD9KYL6GQ"/>
+                <label name="thread" value="84561@TRI-RKD9KYL6GQ.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
