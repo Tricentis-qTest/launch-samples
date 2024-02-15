@@ -7,9 +7,8 @@ Based on [cucumber-sample](https://github.com/QASymphony/cucumber-sample) reposi
 
 ### Prerequisites
 On your Host:
-1. Install [Java 8+](https://jdk.java.net/archive/), e.g. use v13.0.2.
-2. Install [Maven](https://maven.apache.org/install.html), e.g. use v3.9.6. Make sure to remember the installation path,
-   you will need it in the Agent setup.
+1. Install [JDK 17.0.2](https://jdk.java.net/archive/).
+2. Install [Maven 3.8.8](https://maven.apache.org/download.cgi).
 
 ### Agent Setup
 1. **Agent Name**: e.g. _Cucumber-Agent_
@@ -23,9 +22,6 @@ On your Host:
 7. **Execute Command**: Both for Windows and Linux/Mac
     ```node
     const { execSync } = require("child_process");
-    // NOTE: change the value to reflect the actual path to maven executable in your host machine
-    let mavenExePath = '/usr/local/opt/apache-maven-3.5.4/bin/mvn';
-    
     // Automation content is the identifier of an automated Test Run in qTest Manager.
     // We will try to get all automation content(s) of all the test run(s) stored in magic variable TESTCASES_AC, 
     // The value of TESTCASES_AC is under comma separated string, or empty if there is no test runs scheduled to be executed.
@@ -37,7 +33,7 @@ On your Host:
     cucumberOptions += " -n '" + testcases_AC.replace(/,/g, '|') + "'";
     }
     // build command line
-    let command = `"${mavenExePath}" -Dcucumber.options="${cucumberOptions}" clean test`;
+    let command = `mvn -Dcucumber.options="${cucumberOptions}" clean test`;
     
     console.log(`=== executing command ===`);
     console.log(command)

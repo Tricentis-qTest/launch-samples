@@ -26,10 +26,10 @@ because the Host needs to have available tools such as Maven, JMeter...
 Each sample application has its own prerequisites which are listed in the respective READMEs. 
 For convenience, they are summarize here so that you may install all necessary tooling before setting up the agents.
 
-1. Install [JDK 8](https://jdk.java.net/archive/).
-2. Install [Maven](https://maven.apache.org/install.html), e.g. use v3.9.6.
-3. Install [JMeter](https://jmeter.apache.org/download_jmeter.cgi), e.g. use v5.6.3. Make sure to remember the installation path,
-     you will need it in the Agent setup.
-4. Install [.NET 2.2](https://dotnet.microsoft.com/en-us/download/dotnet)
-5. Install [Newman](https://learning.postman.com/docs/collections/using-newman-cli/installing-running-newman/),
-      a command-line Collection Runner for Postman.
+You may be get away with using newer or older versions but at the time of writing, these versions are known to work.
+1. Install [JDK 17.0.2](https://jdk.java.net/archive/).
+2. For Allure sample you will need JDK 8, but there is a way to set up the agent without JDK.
+3. Install [Maven 3.8.8](https://maven.apache.org/download.cgi).
+4. Install [JMeter 5.6.3](https://jmeter.apache.org/download_jmeter.cgi).
+5. Install [.NET 2.2](https://dotnet.microsoft.com/en-us/download/dotnet).
+6. Install [Newman 6.1.1](https://learning.postman.com/docs/collections/using-newman-cli/installing-running-newman/).

@@ -6,8 +6,8 @@ Based on [jmeter-sample](https://github.com/QASymphony/jmeter-sample) repository
 ## Testing Host (automation) integrated with Launch (automation-hub)
 
 ### Prerequisites
-1. Install [Java 8+](https://jdk.java.net/archive/), e.g. use v13.0.2.
-2. Install [JMeter](https://jmeter.apache.org/download_jmeter.cgi), e.g. use v5.6.3. Make sure to remember the installation path,
+1. Install [JDK 17.0.2](https://jdk.java.net/archive/).
+2. Install 4. Install [JMeter 5.6.3](https://jmeter.apache.org/download_jmeter.cgi). Make sure to remember the installation path,
    you will need it in the Agent setup.
 
 ### Agent Setup

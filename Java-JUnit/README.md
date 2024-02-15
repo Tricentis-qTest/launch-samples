@@ -8,9 +8,8 @@ Based on [junit-sample](https://github.com/QASymphony/junit-sample) repository a
 
 ### Prerequisites
 On your Host:
-1. Install [Java 8+](https://jdk.java.net/archive/), e.g. use v13.0.2.
-2. Install [Maven](https://maven.apache.org/install.html), e.g. use v3.9.6. Make sure to remember the installation path,
-you will need it in the Agent setup.
+1. Install [JDK 17.0.2](https://jdk.java.net/archive/).
+2. Install [Maven 3.8.8](https://maven.apache.org/download.cgi).
 
 ### Agent Setup
 1. **Agent Name**: e.g. _JUnit-Agent_
@@ -24,15 +23,11 @@ you will need it in the Agent setup.
 7. **Execute Command**: Both for Windows and Linux/Mac
     ```node
    const { execSync } = require("child_process");
-   
-   // NOTE: change the value to reflect the actual path to maven executable in your host machine
-   let mavenExePath = `/usr/local/opt/apache-maven-3.9.6/bin/mvn`;
-   
    // if $TESTCASES_AC has values, build command to run tests that match automation content only. Otherwise, execute all the tests.
-   let command = `"${mavenExePath}" clean test`;
+   let command = `mvn clean test`;
    let testcases_AC = $TESTCASES_AC;
    if (testcases_AC && testcases_AC.length) {
-      command = `"${mavenExePath}" -Dtest=${testcases_AC} clean test`;
+      command = `"mvn -Dtest=${testcases_AC} clean test`;
    }
    
    console.log(`=== executing command ===`);
