@@ -27,7 +27,7 @@ On your Host:
    let command = `mvn clean test`;
    let testcases_AC = $TESTCASES_AC;
    if (testcases_AC && testcases_AC.length) {
-      command = `"mvn -Dtest=${testcases_AC} clean test`;
+      command = `mvn -Dtest=${testcases_AC} clean test`;
    }
    
    console.log(`=== executing command ===`);
