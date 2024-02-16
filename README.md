@@ -1,4 +1,4 @@
-# launch-sample-applications
+# Launch Samples
 Sample applications for testing different types of Agent parses.
 
 ## How to use this repository
@@ -10,7 +10,7 @@ agent with a parser.
    1. `cd C:` (Windows)
    2. `cd /usr/local/var/` (Linux or Mac)
     ```shell
-    git clone https://github.com/pavolbaran/launch-sample-applications.git
+    git clone https://github.com/Tricentis-qTest/launch-samples.git
     ```
    
 2. If you want to test all parsers, install the tooling listed bellow. Otherwise, proceed to a specific folder in this

@@ -17,8 +17,8 @@ Based on [jmeter-sample](https://github.com/QASymphony/jmeter-sample) repository
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _batch_ (Windows) or _shell_ (Linux or Mac)
 6. **Working Directory**:
-    - _C:\launch-sample-applications\JMeter_ (Windows)
-    - _/usr/local/var/launch-sample-applications/JMeter_ (Linux or Mac)
+    - _C:\launch-samples\JMeter_ (Windows)
+    - _/usr/local/var/launch-samples/JMeter_ (Linux or Mac)
 7. **Execute Command**: 
     ```shell
     /usr/local/opt/apache-jmeter-5.6.3/bin/jmeter -n -t Users.jmx -l results/result.xml -Jjmeter.save.saveservice.output_format=xml -Jjmeter.save.saveservice.response_data.on_error=true
@@ -26,6 +26,6 @@ Based on [jmeter-sample](https://github.com/QASymphony/jmeter-sample) repository
    > Adjust the path to JMeter executable to reflect the actual path in your host machine. For example on Windows to `C:\apache-jmeter-5.6.3\bin\jmeter`.
     
 8. **Path to Results**:
-    - _C:\launch-sample-applications\JMeter\results_ (Windows)
-    - _/usr/local/var/launch-sample-applications/JMeter/results_ (Linux or Mac)
+    - _C:\launch-samples\JMeter\results_ (Windows)
+    - _/usr/local/var/launch-samples/JMeter/results_ (Linux or Mac)
 9. **Result Parser**: _JUnit for Java_

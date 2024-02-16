@@ -16,8 +16,8 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _node_
 6. **Working Directory**:
-    - _C:\launch-sample-applications\NUnit_ (Windows)
-    - _/usr/local/var/launch-sample-applications/NUnit_ (Linux or Mac)
+    - _C:\launch-samples\NUnit_ (Windows)
+    - _/usr/local/var/launch-samples/NUnit_ (Linux or Mac)
 7. **Execute Command**:
    ```node
    // sample Execute Command for executing .NET core test with node executor
@@ -112,6 +112,6 @@ On your Host:
    }
    ```
 8. **Path to Results**:
-    - _C:\launch-sample-applications\NUnit\TestResults_ (Windows)
-    - _/usr/local/var/launch-sample-applications/NUnit/TestResults_ (Linux or Mac)
+    - _C:\launch-samples\NUnit\TestResults_ (Windows)
+    - _/usr/local/var/launch-samples/NUnit/TestResults_ (Linux or Mac)
 9. **Result Parser**: _NUnit_

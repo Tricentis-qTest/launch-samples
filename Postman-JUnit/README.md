@@ -18,13 +18,13 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _batch_ (Windows) or _shell_ (Linux or Mac)
 6. **Working Directory**:
-    - _C:\launch-sample-applications\Postman-JUnit_ (Windows)
-    - _/usr/local/var/launch-sample-applications/Postman-JUnit_ (Linux or Mac)
+    - _C:\launch-samples\Postman-JUnit_ (Windows)
+    - _/usr/local/var/launch-samples/Postman-JUnit_ (Linux or Mac)
 7. **Execute Command**: Both for Windows and Linux/Mac
     ```shell
     newman run "./sample-collection.json" --reporters cli,junit --reporter-junit-export "./results/sample-results.xml" --suppress-exit-code    
     ```
 8. **Path to Results**:
-    - _C:\launch-sample-applications\Postman-JUnit\results\sample-results.xml_ (Windows)
-    - _/usr/local/var/launch-sample-applications/Postman-JUnit/results/sample-results.xml_ (Linux or Mac)
+    - _C:\launch-samples\Postman-JUnit\results\sample-results.xml_ (Windows)
+    - _/usr/local/var/launch-samples/Postman-JUnit/results/sample-results.xml_ (Linux or Mac)
 9. **Result Parser**: _Postman JUnit_

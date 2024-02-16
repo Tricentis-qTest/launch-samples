@@ -17,8 +17,8 @@ On your Host:
 4. **Pre-Execute-Script**: Leave empty.
 5. **Executor**: _node_
 6. **Working Directory**:
-    - _C:\launch-sample-applications\Cucumber-JUnit_ (Windows)
-    - _/usr/local/var/launch-sample-applications/Cucumber-JUnit_ (Linux or Mac)
+    - _C:\launch-samples\Cucumber-JUnit_ (Windows)
+    - _/usr/local/var/launch-samples/Cucumber-JUnit_ (Linux or Mac)
 7. **Execute Command**: Both for Windows and Linux/Mac
     ```node
     const { execSync } = require("child_process");
@@ -41,6 +41,6 @@ On your Host:
     console.log(`=== command completed ===`)
     ```
 8. **Path to Results**:
-    - _C:\launch-sample-applications\Cucumber-JUnit\target\surefire-reports_ (Windows)
-    - _/usr/local/var/launch-sample-applications\Cucumber-JUnit/target/surefire-reports_ (Linux or Mac)
+    - _C:\launch-samples\Cucumber-JUnit\target\surefire-reports_ (Windows)
+    - _/usr/local/var/launch-samples\Cucumber-JUnit/target/surefire-reports_ (Linux or Mac)
 9. **Result Parser**: _Cucumber JUnit_
