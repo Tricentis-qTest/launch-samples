@@ -3,7 +3,7 @@
 Based on [dotnet-samples](https://github.com/QASymphony/dotnet-samples) repository
 and [documentation](https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/universal_agent/parsers/integrate_nunit_test_with_universal_agent.htm).
 
-## Testing Host (automation) integrated with Launch (automation-hub)
+## Testing Host (automation) integrated with Launch
 
 ### Prerequisites
 On your Host:

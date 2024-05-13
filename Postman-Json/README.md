@@ -3,7 +3,7 @@
 Based on [archive-postman-sample](https://github.com/Tricentis-qTest/archive-postman-samples) repository and
 [documentation](https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/universal_agent/parsers/integrate_postman_with_universal_agent.htm).
 
-## Testing Host (automation) integrated with Launch (automation-hub)
+## Testing Host (automation) integrated with Launch
 
 ### Prerequisites
 On your Host:

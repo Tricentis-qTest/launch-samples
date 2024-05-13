@@ -4,7 +4,7 @@ Based on [junit-sample](https://github.com/QASymphony/junit-sample) repository a
 [documentation](https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/universal_agent/parsers/integrate_junit_for_java_with_universal_agent.htm).
 
 
-## Testing Host (automation) integrated with Launch (automation-hub)
+## Testing Host (automation) integrated with Launch
 
 ### Prerequisites
 On your Host:
