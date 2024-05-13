@@ -3,7 +3,7 @@
 Based on [cucumber-sample](https://github.com/QASymphony/cucumber-sample) repository and 
 [documentation](https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/universal_agent/parsers/integrate_cucumber_with_universal_agent.htm).
 
-## Testing Host (automation) integrated with Launch
+## Testing Automation Host integration with Launch
 
 ### Prerequisites
 On your Host:

@@ -3,7 +3,7 @@
 Based on [jmeter-sample](https://github.com/QASymphony/jmeter-sample) repository and
 [documentation](https://documentation.tricentis.com/qtest/od/en/content/launch/automation_host/universal_agent/parsers/integrate_jmeter_with_universal_agent.htm).
 
-## Testing Host (automation) integrated with Launch
+## Testing Automation Host integration with Launch
 
 ### Prerequisites
 1. Install [JDK 17.0.2](https://jdk.java.net/archive/).

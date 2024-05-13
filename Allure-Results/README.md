@@ -5,7 +5,7 @@ Based on [junit-sample](https://github.com/QASymphony/junit-sample) repository a
 
 Allure Report can take the results of your JUnit (or other test framework) tests and present them in a more readable format.
 
-## Testing Host (automation) integrated with Launch
+## Testing Automation Host integration with Launch
 
 ### Prerequisites
 On your Host:
