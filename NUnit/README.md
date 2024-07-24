@@ -7,7 +7,7 @@ and [documentation](https://documentation.tricentis.com/qtest/od/en/content/laun
 
 ### Prerequisites
 On your Host:
-1. Install [.NET 2.2](https://dotnet.microsoft.com/en-us/download/dotnet)
+1. Install [.NET 2.2](https://dotnet.microsoft.com/en-us/download/dotnet) (Agent Setup for Linux expects `dotnet` installed in `/usr/local/bin/`)
 
 ### Agent Setup
 1. **Agent Name**: e.g. _NUnit-Agent_

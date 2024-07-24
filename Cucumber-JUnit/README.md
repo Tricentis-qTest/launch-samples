@@ -42,5 +42,5 @@ On your Host:
     ```
 8. **Path to Results**:
     - _C:\launch-samples\Cucumber-JUnit\target\surefire-reports_ (Windows)
-    - _/usr/local/var/launch-samples\Cucumber-JUnit/target/surefire-reports_ (Linux or Mac)
+    - _/usr/local/var/launch-samples/Cucumber-JUnit/target/surefire-reports_ (Linux or Mac)
 9. **Result Parser**: _Cucumber JUnit_
