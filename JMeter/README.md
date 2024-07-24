@@ -28,4 +28,4 @@ Based on [jmeter-sample](https://github.com/QASymphony/jmeter-sample) repository
 8. **Path to Results**:
     - _C:\launch-samples\JMeter\results_ (Windows)
     - _/usr/local/var/launch-samples/JMeter/results_ (Linux or Mac)
-9. **Result Parser**: _JUnit for Java_
+9. **Result Parser**: _JMeter_

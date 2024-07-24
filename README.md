@@ -34,4 +34,5 @@ You may get away with using newer or older versions but at the time of writing, 
 6. Install [Newman 6.1.1](https://learning.postman.com/docs/collections/using-newman-cli/installing-running-newman/).
 > Verify your installations, e.g. `mvn -v`.
 
-There is a script `install-ubuntu-deps.sh` prepared for debian-based linux which will install/download most of the required tooling.
+There is a script `install-ubuntu-deps.sh` prepared for debian-based linux which will install/download most of the required tooling.<br>
+NUnit Agent Setup for Linux expects `dotnet` installed in `/usr/local/bin/`
