@@ -1,5 +1,14 @@
 #!/bin/sh
-apt install -y maven jmeter npm
+apt install -y npm
 npm install -g newman
 wget https://download.visualstudio.microsoft.com/download/pr/022d9abf-35f0-4fd5-8d1c-86056df76e89/477f1ebb70f314054129a9f51e9ec8ec/dotnet-sdk-2.2.207-linux-x64.tar.gz
+wget https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.zip
+wget https://dlcdn.apache.org/maven/maven-3/3.9.8/binaries/apache-maven-3.9.8-bin.zip
+
 tar -xzf dotnet-sdk-2.2.207-linux-x64.tar.gz
+unzip apache-jmeter-5.6.3.zip
+unzip apache-maven-3.9.8-bin.zip  
+
+echo 'export PATH=$PATH:/usr/local/apache-maven-3.9.8/bin' >> ~/.bashrc
+echo 'export PATH=$PATH:/usr/local/apache-jmeter-5.6.3/bin' >> ~/.bashrc
+source ~/.bashrc
