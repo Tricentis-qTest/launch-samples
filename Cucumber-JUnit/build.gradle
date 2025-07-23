@@ -31,8 +31,6 @@ dependencies {
 	// compile 'org.springframework.boot:spring-boot-starter-web:1.5.9.RELEASE'
 	// compile 'org.springframework.boot:spring-boot-starter-security:1.5.9.RELEASE'
     // compile 'org.springframework.security.oauth:spring-security-oauth2:2.2.1.RELEASE'
-    compile 'org.apache.logging.log4j:log4j-core:2.10.0'
-    compile 'org.apache.logging.log4j:log4j-api:2.10.0'
     compile 'io.cucumber:cucumber-java:3.0.2'
 	compile 'io.cucumber:cucumber-junit:3.0.2'
     // compile 'org.apache.commons:commons-lang3:3.7'
