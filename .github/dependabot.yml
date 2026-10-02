@@ -25,6 +25,8 @@ updates:
       - "/**/*"
     schedule:
       interval: "daily"
+      time: "10:00"
+      timezone: "Europe/Prague"
     cooldown:
       default-days: 3
     registries:
@@ -47,6 +49,8 @@ updates:
       - "/**/*"
     schedule:
       interval: "daily"
+      time: "10:00"
+      timezone: "Europe/Prague"
     cooldown:
       default-days: 3
     registries:
@@ -69,6 +73,8 @@ updates:
       - "/**/*"
     schedule:
       interval: "daily"
+      time: "10:00"
+      timezone: "Europe/Prague"
     cooldown:
       default-days: 3
     registries:
